@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "855218023368",
+    "project_id": "pheezee-8d6ba",
+    "storage_bucket": "pheezee-8d6ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855218023368:android:2f592d656279c64d6b2efd",
+        "android_client_info": {
+          "package_name": "com.example.pheezee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855218023368-3v27mr048pj4t73rp4j9aspnqv7qeub1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPB-yy4y2W3Iw_y8bywM1_4aLGEmopKj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855218023368-3v27mr048pj4t73rp4j9aspnqv7qeub1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#012E57"
+    tools:context=".OtpActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/frutiger"
+        android:gravity="center"
+        android:text="Enter code"
+        android:textColor="@color/white"
+        android:textSize="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.24000001"></TextView>
+
+    <TextView
+        android:id="@+id/numberwithtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/frutiger"
+        android:gravity="center"
+
+        android:text="We have sent an SMS on +919999999999 with 4 digit verification code"
+        android:textColor="#EFE1E1"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberwithtext" />
+
+
+    <TextView
+        android:id="@+id/nnn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/frutiger"
+        android:text="Did not receive the code?"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <TextView
+        android:id="@+id/kkkk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/frutiger"
+        android:text="OTP didn't match Verify"
+        android:textColor="#f0951f"
+        android:textSize="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nnn"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/otp_entry"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:elevation="50dp"
+        android:hint=""
+        android:inputType="number"
+        android:itemBackground="#CB918D8D"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/black"
+        app:cursorWidth="2dp"
+        app:itemCount="6"
+        app:itemHeight="35dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="5dp"
+        app:itemWidth="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.29000002"
+        app:lineColor="#00000000"
+        app:lineWidth="2dp"
+        app:viewType="rectangle"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FF6D00"
+        android:elevation="100dp"
+        app:cardCornerRadius="10dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/otp_entry"
+        app:layout_constraintStart_toStartOf="@+id/otp_entry"
+        app:layout_constraintTop_toBottomOf="@+id/otp_entry">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Submit"
+            android:gravity="center"
+            android:fontFamily="@font/frutiger_bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            ></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
